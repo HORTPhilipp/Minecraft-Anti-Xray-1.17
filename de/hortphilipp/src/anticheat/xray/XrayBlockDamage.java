@@ -1,11 +1,12 @@
 /*
  * Made by HORTPhilipp
+ * https://github.com/HORTPhilipp/Minecraft-Anti-Xray-1.17/
  */
 
 package de.hortphilipp.src.anticheat.xray;
 
-import de.serverplugin.devplugin.Main;
-import de.serverplugin.devplugin.utils.CustomBlockData;
+import de.hortphilipp.src.Main;
+import de.hortphilipp.src.anticheat.xray.CustomBlockData;
 import org.bukkit.Location;
 import org.bukkit.Material;
 import org.bukkit.NamespacedKey;
