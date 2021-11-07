@@ -1,4 +1,4 @@
-package de.serverplugin.devplugin.anticheat.xray;
+package de.hortphilipp.src.anticheat.xray;
 
 import de.serverplugin.devplugin.Main;
 import de.serverplugin.devplugin.utils.CustomBlockData;
