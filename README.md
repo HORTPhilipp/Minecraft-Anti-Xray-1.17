@@ -49,7 +49,7 @@ public void registerListener() {
 
 ### Caution
 
-If you want to disable the ``Minecraft-Anti-Xray-1.17`` you only must delete the [`XrayBlockDamage.java`](https://github.com/HORTPhilipp/Minecraft-Anti-Xray-1.17/blob/main/de/hortphilipp/src/anticheat/xray/XrayBlockDamage.java) file and adjust your `registerListener()` function. Also you have to insert this line in the `onBreakBlockEvent(BlockBreakEvent e)` function in the [`XrayBlockBreak.java`](https://github.com/HORTPhilipp/Minecraft-Anti-Xray-1.17/blob/main/de/hortphilipp/src/anticheat/xray/XrayBlockBreak.java) file:
+If you want to disable the ``Minecraft-Anti-Xray-1.17`` you only must delete the [`XrayBlockDamage.java`](https://github.com/HORTPhilipp/Minecraft-Anti-Xray-1.17/blob/main/de/hortphilipp/src/anticheat/xray/XrayBlockDamage.java) file and adjust your `registerListener()` function. Also you have to insert this line in the `onBlockBreakEvent(BlockBreakEvent e)` function in the [`XrayBlockBreak.java`](https://github.com/HORTPhilipp/Minecraft-Anti-Xray-1.17/blob/main/de/hortphilipp/src/anticheat/xray/XrayBlockBreak.java) file:
 
 ```java
 xu.resetToOriginal(xu.createAbstractBlockSphere(e.getBlock().getLocation(), 3));
