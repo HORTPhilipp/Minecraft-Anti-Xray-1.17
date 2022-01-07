@@ -22,21 +22,21 @@ public class XrayBlockDamage implements Listener {
 
     // TODO SETTINGS
     /*
-    * Increasing the "oreVicinity" value will cause the blocks around the mined block to
-    * reset in a higher radius. This helps, if it bothers you, when sometimes some
-    * ores flashes through the mined block. But this also decreases the effectiveness a bit, since
-    * the not obfuscated part around the mined block is bigger. So it is recommended to not increase
-    * "oreVicinity" by more than 2. Also, it is important that the value is at least 2, in order for
-    * the anti-xray-system to work.
-    * */
+     * Increasing the "oreVicinity" value will cause the blocks around the mined block to
+     * reset in a higher radius. This helps, if it bothers you, when sometimes some
+     * ores flashes through the mined block. But this also decreases the effectiveness a bit, since
+     * the not obfuscated part around the mined block is bigger. So it is recommended to not increase
+     * "oreVicinity" by more than 2. Also, it is important that the value is at least 2, in order for
+     * the anti-xray-system to work.
+     * */
     int oreVicinity = 2;
     /*
-    * Changing the value of "replacementRadius" effects the size of the area of blocks around the
-    * mined block, which gets obfuscated. Recommended is a value of 6. Decreasing the value
-    * can improve the servers performance a bit, but also reduces the effectiveness of the
-    * anti-xray-system. Increase "replacementRadius" will raise the effectiveness, but could
-    * affect the server performance.
-    * */
+     * Changing the value of "replacementRadius" effects the size of the area of blocks around the
+     * mined block, which gets obfuscated. Recommended is a value of 6. Decreasing the value
+     * can improve the servers performance a bit, but also reduces the effectiveness of the
+     * anti-xray-system. Increase "replacementRadius" will raise the effectiveness, but could
+     * affect the server performance.
+     * */
     int replacementRadius = 6;
 
     @EventHandler
@@ -83,6 +83,6 @@ public class XrayBlockDamage implements Listener {
                 }
             }
         }
-            xu.resetToOriginal(xu.createAbstractBlockSphere(loc, oreVicinity));
+        xu.resetToOriginal(xu.createAbstractBlockSphere(loc, oreVicinity));
     }
 }

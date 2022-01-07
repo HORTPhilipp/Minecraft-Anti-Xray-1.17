@@ -31,6 +31,10 @@ public class XrayUtils {
     }
 
     public Material stringToMaterial(String material) {
+        /*
+         * I know there is a 'Material.valueOf("string")' method, but this has to loop through the whole
+         * Material enum. So, I think, this method is much faster.
+         */
         Material res = null;
         switch (material) {
             case "STONE":

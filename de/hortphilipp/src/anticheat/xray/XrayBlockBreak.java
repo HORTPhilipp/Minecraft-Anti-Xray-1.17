@@ -41,4 +41,18 @@ public class XrayBlockExplode implements Listener {
     public void onBlockBreakEvent(BlockBreakEvent e) {
         new CustomBlockData(e.getBlock(), Main.getInstance()).clear();
     }
+
+    @EventHandler
+    public void onFallBlock(EntityChangeBlockEvent e) {
+        Entity entity = e.getEntity();
+        Block b = e.getBlock();
+
+        if (entity instanceof FallingBlock && e.getTo() == Material.AIR)
+            xu.resetToOriginal(xu.createAbstractBlockSphere(b.getLocation(), 2));
+    }
+
+    @EventHandler
+    public void onEntityChangeBlockEvent(EntityChangeBlockEvent e) {
+        xu.resetToOriginal(xu.createAbstractBlockSphere(e.getBlock().getLocation(), 2));
+    }
 }
